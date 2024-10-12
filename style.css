@@ -1,0 +1,495 @@
+
+body {
+  font-family: "Afacad Flux", sans-serif;
+
+}
+
+h1 {
+    font-size: 50px;
+    z-index: 1;
+    font-weight: bold;
+}
+
+
+h2 {
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: #007BFF;
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar-nav {
+    flex-direction: column;
+
+  }
+  
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#login-btn {
+    border: 3px solid #fff;
+    border-radius: 40px;
+    max-width: 120px; /* add this rule */
+    padding: 0 10px 0 10px;
+    margin-top: 6px;
+  }
+
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    z-index: 1; /* Lower than the navbar */
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+.btn-learn-more {
+    z-index: 1;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-learn-more:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Dark overlay to improve text visibility */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 0;
+}
+
+
+section:not(.hero) {
+    margin: 50px 40px 90px 0px;
+  }
+
+section .container {
+    padding: 60px;
+    padding-left: 150px;
+}
+
+.row {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.services .card {
+    border-radius: 80px;
+    text-align: center;
+    align-items: center;
+    width: 350px;
+
+}
+
+.services .card img {
+    height: 500px;
+    width: 350px;
+    border-radius: 80px;
+}
+
+.services .card-img-overlay {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+.services .card-title{
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-learn-more {
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    font-size: 25px;
+}
+
+.about .row {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end; /* add this to align items to the bottom */
+}
+
+
+p {
+    font-size: 22px;
+    text-align: justify;
+}
+
+.row-btn {
+    margin-top: 50px;
+}
+
+.blue-button {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 30px;
+    width: 50;
+}
+
+.white-button {
+    color: #007BFF;
+    background-color: white;
+    border-radius: 40px;
+    border: 1px solid #007BFF;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: auto;
+}
+
+.blue-button:hover {
+    background-color: #fff;
+    color: #007BFF;
+    border-color: #007BFF;
+}
+
+.white-button:hover {
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #fff;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+.partner .card-title {
+    font-size: 45px;
+    font-weight:bolder;
+    color: #007BFF;
+    align-items: center;
+}
+
+.partner .card {
+    height: 41vh;
+    border-radius: 70px;
+    text-align: center;
+    align-items: center;
+}
+
+.partner .card-body {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.partner img {
+    width: 100px;
+}
+
+.talent img, .about img {
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 80px;
+}
+
+.download .container {
+    max-width: 1200px;
+  }
+  
+  .download .row-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .download .row-btn a {
+    flex: 0 1 auto;
+    max-width: 180px;
+    width: 30%;
+  }
+  
+  .download img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .connect .col-md-8 {
+    display: flex;
+    justify-content: center; /* Vertically centers the h2 within the column */
+    flex-direction: column; /* Stacks elements vertically */
+}
+
+.connect h2 {
+    text-align: left; /* Keeps the text left-aligned */
+}
+
+
+  .connect p {
+    color: white; 
+    margin-bottom: 0px; 
+    font-weight: bold; 
+    font-size: 40px
+  }
+
+  .connect a {
+    color: white; 
+    margin-bottom: 0px; 
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .connect .row-btn a i {
+    display: inline-block;
+    width: 50px; /* Set a width to make it circular */
+    height: 50px; /* Set the same height as the width */
+    line-height: 50px; /* Vertically center the icon text inside */
+    border-radius: 50%; /* Makes the element circular */
+    background-color: white; /* Or any color you prefer */
+    color: #007BFF; /* Icon color */
+    text-align: center; /* Center the icon */
+    font-size: 24px; /* Adjust the icon size */
+    margin-right: 10px; /* Space between the icons */
+}
+
+footer .links a{
+    text-decoration: none;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  
+/* Tablet adjustments */
+@media (max-width: 768px) {
+    section .container {
+        padding: 20px
+    }
+
+    h1 {
+        font-size: 40px; /* Smaller title font size */
+    }
+
+    h2 {
+        font-size: 50px; /* Smaller heading font size */
+    }
+
+    .btn-learn-more {
+        padding: 8px 15px; /* Smaller padding for buttons */
+        font-size: 20px; /* Smaller button font size */
+    }
+
+    .services .card {
+        width: 90%; /* Make cards take more width */
+        border-radius: 40px;
+    }
+
+    .services .card img {
+        height: 250px; /* Reduced image height */
+        object-fit: cover; /* Crop the image instead of stretching */
+        border-radius: 40px;
+    }
+
+    p {
+        font-size: 18px; /* Smaller paragraph font size */
+    }
+
+    .blue-button, .white-button {
+        padding: 8px 20px; /* Smaller padding for buttons */
+        font-size: 18px; /* Smaller button font size */
+    }
+
+    .partner .card {
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .partner .card-title {
+        font-size: 30px; /* Smaller title font size */
+    }
+
+    .partner img {
+        width: 30px; /* Smaller title font size */
+    }
+
+    .talent img, .about img {
+        border-radius: 20px;
+        height: 150px;
+        width: 400px;
+        object-fit: cover;
+        margin: 0px;
+    }
+
+
+    .connect p {
+        font-size: 28px; /* Smaller paragraph font size */
+    }
+
+    .connect h2 {
+        font-size: 40px; /* Smaller heading font size */
+    }
+
+    .download .row-btn a {
+        width: 45%; /* Adjust button width for better spacing */
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    section .container {
+        padding: 20px
+    }
+    
+    h1 {
+        font-size: 30px; /* Even smaller title font size */
+    }
+
+    h2 {
+        font-size: 50px; /* Even smaller heading font size */
+    }
+
+    .btn-learn-more {
+        padding: 6px 10px; /* Smaller padding for buttons */
+        font-size: 18px; /* Smaller button font size */
+    }
+
+    .services .card {
+        width: 100%; /* Full width for mobile */
+        border-radius: 40px;
+    }
+
+    .services .card img {
+        height: 150px; /* Further reduced image height for mobile */
+        object-fit: cover; /* Keep cropping the image */
+        border-radius: 40px;
+    }
+
+    p {
+        font-size: 16px; /* Smaller paragraph font size */
+    }
+
+    .blue-button, .white-button {
+        padding: 6px 15px; /* Smaller padding for buttons */
+        font-size: 16px; /* Smaller button font size */
+    }
+    
+
+    .partner .card {
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .partner .card-title {
+        font-size: 25px; /* Smaller title font size */
+    }
+
+    .partner img {
+        width: 30px; /* Smaller title font size */
+    }
+
+    .talent img, .about img {
+        border-radius: 20px;
+        height: 150px;
+        width: 400px;
+        object-fit: cover;
+        margin: 0px;
+    }
+
+    .connect p {
+        font-size: 24px; /* Smaller paragraph font size */
+    }
+
+    .connect h2 {
+        font-size: 30px; /* Smaller heading font size */
+    }
+
+    .download .row-btn a {
+        width: 100%; /* Full width for buttons */
+    }
+}
+
+
+
+
+
