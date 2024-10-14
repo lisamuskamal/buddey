@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 60px;
     z-index: 1;
     font-weight: bold;
 }
@@ -14,7 +14,7 @@ h1 {
 h2 {
     color: #007BFF;
     font-weight: bold;
-    font-size: 65px;
+    font-size: 58px;
     margin-bottom: 20px;
 }
 
@@ -121,13 +121,13 @@ section .container {
     border-radius: 80px;
     text-align: center;
     align-items: center;
-    width: 350px;
+    width: auto;
 
 }
 
 .services .card img {
-    height: 500px;
-    width: 350px;
+    height: 450px;
+    width: 100%;
     border-radius: 80px;
 }
 
@@ -156,7 +156,7 @@ section .container {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end; /* add this to align items to the bottom */
+    align-items: center; /* add this to align items to the bottom */
 }
 
 
@@ -174,7 +174,7 @@ p {
     color: white;
     border-radius: 40px;
     border: 1px solid #fff;
-    font-size: 22px;
+    font-size: auto;
     font-weight: bold;
     padding: 10px 30px;
     width: 50;
@@ -185,7 +185,7 @@ p {
     background-color: white;
     border-radius: 40px;
     border: 1px solid #007BFF;
-    font-size: 22px;
+    font-size: auto;
     font-weight: bold;
     padding: 10px 20px;
     width: auto;
@@ -230,14 +230,14 @@ button span {
 
 
 .partner .card-title {
-    font-size: 45px;
+    font-size: 35px;
     font-weight:bolder;
     color: #007BFF;
     align-items: center;
 }
 
 .partner .card {
-    height: 41vh;
+    height: 40vh;
     border-radius: 70px;
     text-align: center;
     align-items: center;
@@ -255,6 +255,22 @@ button span {
 .partner img {
     width: 100px;
 }
+
+.talent .row {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* add this to align items to the bottom */}
+
+    /* Ensures that the image fills the entire column */
+.talent .col img, .about .col img {
+    width: 100%; /* Makes the image take up the full width of the column */
+    height: 100%; /* Makes the image take up the full height of the column */
+    object-fit: cover; /* Ensures the image covers the column without distortion */
+    border-radius: 20px; /* Optional: Adds rounded corners */
+    display: block; /* Ensures no extra space from inline elements */
+}
+
 
 .talent img, .about img {
     max-width: 85%;
@@ -338,6 +354,102 @@ footer .links a{
     opacity: 1;
     transform: translateY(0);
   }
+
+  /* Adjust styles for tablets up to 1024px */
+@media (max-width: 1200px) {
+    section .container {
+        padding: 20px; /* Adjust padding for tablets */
+    }
+
+    h1 {
+        font-size: 35px; /* Resize title font */
+    }
+
+    h2 {
+        font-size: 45px; /* Resize heading font */
+    }
+
+    .btn-learn-more {
+        padding: 8px 15px; /* Adjust button size */
+        font-size: 20px; /* Button text size */
+    }
+
+    .services .card {
+        width: auto; /* Wider card width on tablets */
+        border-radius: 40px;
+        
+    }
+
+    .services .card p{
+        font-size: 24px;
+        border-radius: 20px;
+        
+    }
+
+    .services .card img {
+        height: 250px; /* Adjust image height */
+        width: 100%;
+        object-fit: cover;
+        border-radius: 40px;
+        border-radius: 20px;
+
+    }
+
+    p {
+        font-size: 18px; /* Resize paragraph text */
+    }
+
+    .blue-button, .white-button {
+        padding: 8px 20px; /* Adjust button padding */
+        font-size: 16px; /* Adjust button font size */
+    }
+
+    .talent .blue-button, .white-button {
+        padding: 8px 10px; /* Adjust button padding */
+        font-size: 16px; /* Adjust button font size */
+    }
+
+    .partner .card {
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .partner .card-title {
+        font-size: 30px; /* Smaller title font size for partner section */
+    }
+
+    .partner img {
+        width: 50px; /* Resize images in partner section */
+    }
+
+    .talent, .about {
+        display: flex;
+        justify-content: center; /* Center image horizontally */
+        width: 100%; /* Ensure parent container takes full width */
+        max-width: 100%; /* Prevent overflow */
+    }
+    
+
+    .talent img, .about img {
+        border-radius: 20px;
+        height: 50vh;
+        object-fit: cover;
+        margin: 0px;
+    }
+
+    .connect p {
+        font-size: 28px; /* Adjust paragraph font size in connect section */
+    }
+
+    .connect h2 {
+        font-size: 40px; /* Adjust heading font size in connect section */
+    }
+
+    .download .row-btn a {
+        width: 45%; /* Adjust button width for downloads */
+    }
+}
+
   
 
   
@@ -352,7 +464,7 @@ footer .links a{
     }
 
     h2 {
-        font-size: 50px; /* Smaller heading font size */
+        font-size: 45px; /* Smaller heading font size */
     }
 
     .btn-learn-more {
@@ -363,6 +475,7 @@ footer .links a{
     .services .card {
         width: 90%; /* Make cards take more width */
         border-radius: 40px;
+        margin-left: 20px;
     }
 
     .services .card img {
@@ -377,11 +490,16 @@ footer .links a{
 
     .blue-button, .white-button {
         padding: 8px 20px; /* Smaller padding for buttons */
-        font-size: 18px; /* Smaller button font size */
+        font-size: 14px; /* Smaller button font size */
+    }
+
+    .talent .blue-button, .white-button {
+        padding: 8px 10px; /* Smaller padding for buttons */
+        font-size: 14px; /* Smaller button font size */
     }
 
     .partner .card {
-        height: 100%;
+        height: 25vh;
         border-radius: 20px;
     }
 
@@ -426,7 +544,7 @@ footer .links a{
     }
 
     h2 {
-        font-size: 50px; /* Even smaller heading font size */
+        font-size: 40px; /* Even smaller heading font size */
     }
 
     .btn-learn-more {
@@ -437,6 +555,7 @@ footer .links a{
     .services .card {
         width: 100%; /* Full width for mobile */
         border-radius: 40px;
+        margin-left: 20px;
     }
 
     .services .card img {
