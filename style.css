@@ -205,7 +205,7 @@ p {
 }
 
 
-.partner .white-button:hover, .blue-button:hover {
+.partner .white-button:hover, .partner .blue-button:hover {
     background-color: #fff;
     color: #007BFF;
     border-color: #007BFF;
