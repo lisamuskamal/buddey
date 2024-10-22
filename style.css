@@ -136,6 +136,7 @@ section .container {
     flex-direction:column;
     align-items: center;
     justify-content: flex-end;
+    padding-bottom: 50px;
   }
 
 .services .card-title{
@@ -192,9 +193,9 @@ p {
 }
 
 .blue-button:hover {
-    background-color: #fff;
-    color: #007BFF;
-    border-color: #007BFF;
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #fff;
 }
 
 .white-button:hover {
@@ -202,6 +203,14 @@ p {
     color: #fff;
     border-color: #fff;
 }
+
+
+.partner .white-button:hover, .blue-button:hover {
+    background-color: #fff;
+    color: #007BFF;
+    border-color: #007BFF;
+}
+
 
 button span {
     cursor: pointer;
@@ -241,6 +250,7 @@ button span {
     border-radius: 70px;
     text-align: center;
     align-items: center;
+    padding-bottom: 15px;
 }
 
 .partner .card-body {
@@ -250,6 +260,10 @@ button span {
     display: flex;
     flex-direction: column;
 
+}
+
+.partner .card-body h5 {
+    margin-top: 15px;
 }
 
 .partner img {
@@ -412,6 +426,8 @@ footer .links a{
     .partner .card {
         height: 100%;
         border-radius: 20px;
+        padding-bottom: 25px;
+
     }
 
     .partner .card-title {
@@ -499,16 +515,18 @@ footer .links a{
     }
 
     .partner .card {
-        height: 25vh;
+        height: 30vh;
         border-radius: 20px;
+        padding-bottom: 15px;
+
     }
 
     .partner .card-title {
-        font-size: 30px; /* Smaller title font size */
+        font-size: 25px; /* Smaller title font size */
     }
 
     .partner img {
-        width: 30px; /* Smaller title font size */
+        width: 70px; /* Smaller title font size */
     }
 
     .talent img, .about img {
@@ -564,6 +582,11 @@ footer .links a{
         border-radius: 40px;
     }
 
+    .services .card-img-overlay {
+  
+        padding-bottom: 20px;
+      }
+
     p {
         font-size: 16px; /* Smaller paragraph font size */
     }
@@ -584,7 +607,7 @@ footer .links a{
     }
 
     .partner img {
-        width: 30px; /* Smaller title font size */
+        width: 70px; /* Smaller title font size */
     }
 
     .talent img, .about img {
